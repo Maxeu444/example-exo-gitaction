@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
-console.log("hello");
+console.log("hello sir");
 
 export default function Document() {
   return (
