@@ -1,6 +1,0 @@
-name: s'éxecute lors d'une pull request
-on: 
-pull_request:
-jobs:
-  build:
-    name: Build du projet exemple
