@@ -1,0 +1,18 @@
+name: Build lorsqu'on push
+
+on:
+  push:
+    branches:    
+      - 'main/**'
+      
+jobs:
+  build:
+    name: Build du projet exemple
+    runs-on: unbutu-latest
+    steps: 
+      - name: Récupérer le code
+      uses: actions/checkout@v4
+      -name: installer les dépendences
+      run: npm install
+      -name: build du projet
+      run: npm run build
