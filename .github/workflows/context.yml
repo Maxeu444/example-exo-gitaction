@@ -1,0 +1,7 @@
+name: Output le contenu du contexte Github
+on: workflow_disptach
+jobs:
+  info: 
+    runs-on: unbutu-latest
+    steps:
+      - run: echo "£{{ toJSON(github) }}"
